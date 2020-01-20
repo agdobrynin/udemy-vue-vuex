@@ -11,7 +11,7 @@
         name: "CounterActions",
         methods: {
             changeCount(value) {
-                this.$store.state.counter+=value;
+                this.$store.commit("setCounter", value);
             }
         },
         computed: {
