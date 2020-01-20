@@ -7,8 +7,8 @@
 
 <script>
 
-    import CounterCmp from "./components/сounter-сmp";
-    import CounterActions from "./components/counter-actions";
+    import CounterCmp from "@/components/сounter-сmp";
+    import CounterActions from "@/components/counter-actions";
 
     export default {
         name: 'app',
@@ -16,7 +16,6 @@
             counterCmp: CounterCmp,
             counterActions: CounterActions,
         },
-
     }
 </script>
 
