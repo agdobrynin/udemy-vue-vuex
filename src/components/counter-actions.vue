@@ -16,7 +16,7 @@
         },
         computed: {
             isCounterNegative() {
-                return this.$store.state.counter < 0;
+                return this.$store.getters.counter < 0;
             }
         }
     }
