@@ -1,28 +1,24 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+    div.container
+        h1 Start with Vuex as global store for VueJs
+        CounterCmp
+        CounterActions
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    import CounterCmp from "./components/CounterCmp";
+    import CounterActions from "./components/CounterActions";
+
+    export default {
+        name: 'app',
+        components: {
+            CounterActions,
+            CounterCmp,
+        },
+
+    }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
