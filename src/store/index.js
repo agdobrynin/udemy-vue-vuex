@@ -13,8 +13,8 @@ export default new Vuex.Store({
         }
     },
     mutations: {
-        setCounter(state, value) {
-            state.counter += value;
+        setCounter(state, payload) {
+            state.counter += payload;
         }
     }
 });
