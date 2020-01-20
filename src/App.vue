@@ -1,20 +1,20 @@
 <template lang="pug">
     div.container
         h1 Start with Vuex as global store for VueJs
-        CounterCmp
-        CounterActions
+        counter-cmp
+        counter-actions
 </template>
 
 <script>
 
-    import CounterCmp from "./components/CounterCmp";
-    import CounterActions from "./components/CounterActions";
+    import CounterCmp from "./components/сounter-сmp";
+    import CounterActions from "./components/counter-actions";
 
     export default {
         name: 'app',
         components: {
-            CounterActions,
-            CounterCmp,
+            counterCmp: CounterCmp,
+            counterActions: CounterActions,
         },
 
     }
